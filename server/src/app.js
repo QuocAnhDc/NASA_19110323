@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname,'../public')));
 app.use(morgan("combined"));
 
 app.get("/", (req, res) => {
-	res.send('test~~~');
+	res.send('Project Nasa 19110323');
 });
 
 app.use("/launches", launchesRouter);
