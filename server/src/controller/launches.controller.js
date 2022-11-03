@@ -34,7 +34,7 @@ const httpPostNewLaunches = (req, res) => {
 
 const httpAbortLaunch = (req, res) => {
   const launchId = Number(req.params.id);
-  console.log("log file launches.controller.js show httpAbortLaunch show launchId", launchId)
+  console.log("🚀 ~ file: launches.controller.js ~ line 37 ~ httpAbortLaunch ~ launchId", launchId)
   if (!existLaunchWithId(launchId)) {
     return res.status(400).json({
       error: 'Launch not found',

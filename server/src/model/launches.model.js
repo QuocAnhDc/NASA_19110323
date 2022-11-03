@@ -1,12 +1,14 @@
-const launches = new Map()
+const launches = new Map();
 
-const launch ={
+latestFlightNumber = 100;
+
+const launch = {
   flightNumber: 100,
-  mission: 'Keep Exploration x',
-  rocket : 'Exploration IS1',
-  launchData: new Date("11-03-2025"),
-  target: 'Kepler-123 a',
-  customer : ['Nasa','Proto'],
+  mission: 'keep Exploration x',
+  rocket: 'Exploration IS1',
+  launchDate: new Date("11-27-2030"),
+  target: 'Kepler-122 a',
+  customer : ['Nasa', 'Peter'],
   upcoming: true,
   success: true,
 }
@@ -48,3 +50,4 @@ module.exports =  {
   existLaunchWithId,
   abortLaunchById
 }
+

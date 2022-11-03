@@ -13,11 +13,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname,'../public')));
 app.use(morgan("combined"));
 
-// app.get('/', function(req,res){
-//   res.send('hello')})
-
 app.get("/", (req, res) => {
-	res.send('Nasa Project');
+	res.send('test~~~');
 });
 
 app.use("/launches", launchesRouter);
@@ -25,5 +22,3 @@ app.use("/planets", planetsRouter);
 
 
 module.exports = app;
-
-
